@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+	<name>Keycloak authentication SSO</name>
+	<author>Adem Kuric</author>
+	<creationDate>February 2017</creationDate>
+	<copyright>OCCRP All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>adem@occrp.org</authorEmail>
+	<authorUrl>www.occrp.org</authorUrl>
+	<version>3.0.0</version>
+	<description>Keycloak SSO pligin</description>
+	<files>
+		<filename plugin="keycloak">keycloak.php</filename>
+		<filename>keycloak-json.php</filename>
+		<filename>keycloak-back.js</filename>
+		<filename>keycloak-front.js</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="realm"
+					type="text"
+					label="Realm"
+					description="Realm name"
+					required="true"
+				/>
+				<field
+					name="redirect"
+					type="text"
+					label="Logout Redirect url"
+					description="Logout Redirect url"
+					required="true"
+				/>
+				<field
+					name="server-url"
+					type="text"
+					label="Server URL "
+					description="Keycloak server URL"
+					required="true"
+				/>
+				<field
+					name="client-id"
+					type="text"
+					label="Client ID"
+					description="Client ID"
+					required="true"
+				/>
+				<field
+					name="client-secret"
+					type="text"
+					label="Client secret"
+					description="Client secret"
+					required="true"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
