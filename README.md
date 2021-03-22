@@ -1,2 +1,2 @@
-# Joomla---Keycloak-authentication-SSO-plugin
+# Joomla-Keycloak-authentication-SSO-plugin
 Joomla plugin for Keycloak integration
